@@ -18,6 +18,7 @@ public class LoadingScene : MonoBehaviour {
     private CanvasGroup m_CanvasGroup;
     private bool m_DisableCanvasGroup;
     private AsyncOperation m_LoadingProgress;
+    private bool m_IsPrepareForDestroy;
 
     public float speed = -3;
 	// Use this for initialization
@@ -56,6 +57,7 @@ public class LoadingScene : MonoBehaviour {
             if (Input.anyKeyDown)
             {
                 Debug.Log("down");
+                m_IsPrepareForDestroy = true;
                 gameObject.transform.localScale = Vector3.zero;
                 m_DisableCanvasGroup = true;
 
@@ -70,5 +72,10 @@ public class LoadingScene : MonoBehaviour {
         {
             m_CanvasGroup.alpha -= Time.deltaTime;
         }
+        if (m_IsPrepareForDestroy && gameObject.transform.localScale==Vector3.zero)
+        {
+            Destroy(gameObject);
+        }
+
 	}
 }

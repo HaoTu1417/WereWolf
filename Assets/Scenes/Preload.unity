@@ -400,6 +400,16 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114862121261651224, guid: 670d54bc69fe558439e322404c9bc09b,
+        type: 2}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114862121261651224, guid: 670d54bc69fe558439e322404c9bc09b,
+        type: 2}
+      propertyPath: m_ReferenceResolution.y
+      value: 1280
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114601819682156406, guid: 670d54bc69fe558439e322404c9bc09b, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 670d54bc69fe558439e322404c9bc09b, type: 2}
