@@ -130,7 +130,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 168683062}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e65e811366f6c364c96936a40d634264, type: 3}
   m_Name: 
@@ -152,6 +152,18 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &168683065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 168683062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f57081cd7e02ce24b9fa4e924d64a438, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LoadingScene: {fileID: 168683063}
 --- !u!1 &260514969
 GameObject:
   m_ObjectHideFlags: 0
