@@ -10,12 +10,12 @@ public class CharacterChose : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        var values = Enum.GetValues(typeof(CharacterEnum));
-        foreach (var item in values)
-        {
-            Debug.Log(item);
-            Instantiate(Resources.Load("Hatchet"));
-        }
+        //var values = Enum.GetValues(typeof(CharacterEnum));
+        //foreach (var item in values)
+        //{
+        //    Debug.Log(item);
+        //    Instantiate(Resources.Load("Hatchet"));
+        //}
 	}
 	
 	// Update is called once per framem_
@@ -42,6 +42,7 @@ public class CharacterChose : MonoBehaviour {
                 m_CurrentChosePlayer.m_Character = CharacterEnum.PhuThuy;
                 break;
         }
+        GameController.m_GameControler.m_PlayerControler._SetActiveChoseCharacter(false);
     }
 }
 

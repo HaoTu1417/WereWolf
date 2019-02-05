@@ -48,6 +48,7 @@ public class Player : MonoBehaviour {
     public void _ChangeCharacter()
     {
         m_PlayerControl._SetActiveChoseCharacter(true);
+        m_CharacterChose.m_CurrentChosePlayer = this;
 
     }
 

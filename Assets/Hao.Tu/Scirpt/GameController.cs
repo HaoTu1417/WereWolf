@@ -10,7 +10,8 @@ public class GameController : MonoBehaviour {
     [SerializeField]
     private List<GameObject> m_PanelList = new List<GameObject>();
 
-
+    //Controller
+    public PlayerControler m_PlayerControler;
 
 	// Use this for initialization
 	void Start () {
