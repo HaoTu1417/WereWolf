@@ -5,5 +5,6 @@
     BaoVe,
     Soi,
     TienTri,
-    NhanLang
+    NhanLang,
+    PhuThuy
 }

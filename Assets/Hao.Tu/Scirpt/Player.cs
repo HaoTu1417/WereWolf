@@ -6,19 +6,21 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour {
 
     private bool isAlive;
-    private CharacterEnum m_Character=CharacterEnum.None;
+    public CharacterEnum m_Character=CharacterEnum.None;
     [SerializeField]
     private Image m_CharacterImage;
     [SerializeField]
     private InputField m_PlayerName;
     private PlayerControler m_PlayerControl;
     private int m_IndexInList;
+    private CharacterChose m_CharacterChose;
 
-   public void _LoadData(string _name,int _index,PlayerControler _playerControl)
+   public void _LoadData(string _name,int _index,PlayerControler _playerControl, CharacterChose _characterChose)
     {
         m_PlayerName.text = _name+" "+_index+1;
         m_IndexInList = _index;
         m_PlayerControl = _playerControl;
+        m_CharacterChose = _characterChose;
     }
 
     public void _RemovePlayer()

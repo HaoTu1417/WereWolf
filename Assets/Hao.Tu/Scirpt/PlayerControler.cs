@@ -13,6 +13,8 @@ public class PlayerControler : MonoBehaviour {
     private Transform m_AddNewBtn;
     [SerializeField]
     private GameObject m_CharacterChosePanel;
+    [SerializeField]
+    private CharacterChose m_CharacterChoseControl;
     private int m_currentIndex=0;
     private int m_SelectedCharacter;
 
@@ -21,7 +23,7 @@ public class PlayerControler : MonoBehaviour {
     {
         //tao player
         Player go = Instantiate(m_PlayerPf , m_PlayerContent);
-        go._LoadData("New Player ", m_currentIndex,this);
+        go._LoadData("New Player ", m_currentIndex,this,m_CharacterChoseControl);
         m_currentIndex += 1;
         m_PlayerList.Add(go);
         m_AddNewBtn.SetAsLastSibling();
