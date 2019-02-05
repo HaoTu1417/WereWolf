@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour {
 
     private bool isAlive;
-    private CharacterEnum m_Character;
+    private CharacterEnum m_Character=CharacterEnum.None;
     [SerializeField]
     private Image m_CharacterImage;
     [SerializeField]
@@ -25,6 +25,28 @@ public class Player : MonoBehaviour {
     {
         m_PlayerControl.RemovePlayerObject(this);
         Destroy(gameObject);
+    }
+
+    public void _HighLightText()
+    {
+        m_PlayerName.Select();
+        Debug.Log("Selected");
+    }
+    public bool _IsCharacterSelected()
+    {
+        if (m_Character != CharacterEnum.None)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    public void _ChangeCharacter()
+    {
+        m_PlayerControl._SetActiveChoseCharacter(true);
+
     }
 
 }
