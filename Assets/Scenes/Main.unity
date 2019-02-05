@@ -747,6 +747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CharacterStringList: []
   m_CurrentChosePlayer: {fileID: 0}
+  m_playerControler: {fileID: 0}
 --- !u!1 &408846349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,6 +1131,11 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114291245052660708, guid: baf23020e632aa44c827ce6990881df9,
+        type: 2}
+      propertyPath: m_TargetGraphic
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: baf23020e632aa44c827ce6990881df9, type: 2}
@@ -2668,6 +2674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CharacterStringList: []
   m_CurrentChosePlayer: {fileID: 0}
+  m_playerControler: {fileID: 0}
 --- !u!1 &1745342091
 GameObject:
   m_ObjectHideFlags: 0

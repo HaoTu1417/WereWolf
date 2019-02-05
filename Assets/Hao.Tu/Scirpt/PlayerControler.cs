@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -17,8 +18,13 @@ public class PlayerControler : MonoBehaviour {
     private CharacterChose m_CharacterChoseControl;
     private int m_currentIndex=0;
     private int m_SelectedCharacter;
+  
 
 
+    private void Start()
+    {
+        
+    }
     public void AddNewPlayere()
     {
         //tao player

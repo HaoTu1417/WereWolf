@@ -20,8 +20,8 @@ GameObject:
   m_Component:
   - component: {fileID: 224407631358753582}
   - component: {fileID: 222348457996456694}
-  - component: {fileID: 114562524114304154}
   - component: {fileID: 114961670778474722}
+  - component: {fileID: 114249060500922574}
   m_Layer: 5
   m_Name: PlayerPF
   m_TagString: Untagged
@@ -38,8 +38,8 @@ GameObject:
   m_Component:
   - component: {fileID: 224177209906002120}
   - component: {fileID: 222652234408234902}
-  - component: {fileID: 114521034054040130}
   - component: {fileID: 114291245052660708}
+  - component: {fileID: 114579954123645840}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -179,6 +179,33 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114249060500922574
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1112564355607208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!114 &114291245052660708
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -214,7 +241,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 114521034054040130}
+  m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -231,7 +258,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114521034054040130
+--- !u!114 &114579954123645840
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -239,52 +266,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1219505724035342}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.52410936, g: 0, b: 1, a: 1}
+  m_Color: {r: 0.52156866, g: 0, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!114 &114562524114304154
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1112564355607208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!114 &114588172079696924
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -296,6 +295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826616177d4400b48a8c0aeb359c33e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Character: 0
   m_CharacterImage: {fileID: 0}
   m_PlayerName: {fileID: 114696501182430452}
 --- !u!114 &114620941816678516
@@ -514,7 +514,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 826616177d4400b48a8c0aeb359c33e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CharacterImage: {fileID: 114521034054040130}
+  m_Character: 0
+  m_CharacterImage: {fileID: 114579954123645840}
   m_PlayerName: {fileID: 114696501182430452}
 --- !u!222 &222333226652892860
 CanvasRenderer:

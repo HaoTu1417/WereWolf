@@ -8,7 +8,7 @@ public class Player : MonoBehaviour {
     private bool isAlive;
     public CharacterEnum m_Character=CharacterEnum.None;
     [SerializeField]
-    private Image m_CharacterImage;
+    private RawImage m_CharacterImage;
     [SerializeField]
     private InputField m_PlayerName;
     private PlayerControler m_PlayerControl;
@@ -50,6 +50,12 @@ public class Player : MonoBehaviour {
         m_PlayerControl._SetActiveChoseCharacter(true);
         m_CharacterChose.m_CurrentChosePlayer = this;
 
+    }
+    public void _SetCharacter(CharacterEnum _CharEnum,Texture2D _texture)
+    {
+        m_Character = _CharEnum;
+        m_CharacterImage.color = Color.white;
+        m_CharacterImage.texture = _texture;
     }
 
 }
