@@ -12,13 +12,12 @@ public class Player : MonoBehaviour {
     [SerializeField]
     private InputField m_PlayerName;
     private PlayerControler m_PlayerControl;
-    private int m_IndexInList;
+
     private CharacterChose m_CharacterChose;
 
    public void _LoadData(string _name,int _index,PlayerControler _playerControl, CharacterChose _characterChose)
     {
         m_PlayerName.text = _name+" "+_index+1;
-        m_IndexInList = _index;
         m_PlayerControl = _playerControl;
         m_CharacterChose = _characterChose;
     }

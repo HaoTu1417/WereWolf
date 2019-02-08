@@ -14,17 +14,25 @@ public class CharacterPf : MonoBehaviour {
     [SerializeField]
     private CharacterNumber m_CharacterNumber;
 
-    public void _SetupData(Texture2D _tex,int _DefaultNum, CharacterChose _characterChose)
+    public void _SetupData(Texture2D _tex,int _DefaultNum, CharacterChose _characterChose,CharacterNumber _charNum)
     {
         m_CharacterImg.texture = _tex;
         m_QuantityInputField.AddOptions(m_ListOfQuantity);
         m_QuantityInputField.value=_DefaultNum;
         m_QuantityInputField.RefreshShownValue();
+        m_CharacterNumber = _charNum;
 
 
     }
-    public void _ChangeCharacterQuantity(int _value)
+    public void IncreaseCharacterQuantity(int _value)
     {
-
+        Debug.Log("Increase");
+        m_CharacterNumber._IncreasePlayer(_value);
     }
+    public void _DecreaseCharacterQuantity()
+    {
+        Debug.Log("asd");
+        m_CharacterNumber._DecreasePlayer(m_QuantityInputField.value);
+    }
+   
 }

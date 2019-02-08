@@ -840,6 +840,7 @@ MonoBehaviour:
     type: 2}
   m_pfParent: {fileID: 1576380126}
   m_characterChose: {fileID: 392729185}
+  m_TotalNumber: 0
 --- !u!1 &408846349
 GameObject:
   m_ObjectHideFlags: 0
@@ -1425,11 +1426,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1576380126}
     m_Modifications:
-    - target: {fileID: 114849720669410082, guid: 72278a4d3a428024b9fd8bd11dbeb5cf,
-        type: 2}
-      propertyPath: m_Options.m_Options.Array.size
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 224333210665787472, guid: 72278a4d3a428024b9fd8bd11dbeb5cf,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -1523,31 +1519,6 @@ Prefab:
     - target: {fileID: 1231190088872394, guid: 72278a4d3a428024b9fd8bd11dbeb5cf, type: 2}
       propertyPath: m_Name
       value: CharacterNumberPf
-      objectReference: {fileID: 0}
-    - target: {fileID: 224220076708254428, guid: 72278a4d3a428024b9fd8bd11dbeb5cf,
-        type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 224220076708254428, guid: 72278a4d3a428024b9fd8bd11dbeb5cf,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 114849720669410082, guid: 72278a4d3a428024b9fd8bd11dbeb5cf,
-        type: 2}
-      propertyPath: m_Options.m_Options.Array.data[0].m_Text
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114849720669410082, guid: 72278a4d3a428024b9fd8bd11dbeb5cf,
-        type: 2}
-      propertyPath: m_Options.m_Options.Array.data[1].m_Text
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114849720669410082, guid: 72278a4d3a428024b9fd8bd11dbeb5cf,
-        type: 2}
-      propertyPath: m_Options.m_Options.Array.data[2].m_Text
-      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72278a4d3a428024b9fd8bd11dbeb5cf, type: 2}

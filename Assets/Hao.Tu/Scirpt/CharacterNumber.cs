@@ -17,15 +17,22 @@ public class CharacterNumber : MonoBehaviour
 
     public void _CreateOption()
     {
-        Debug.Log("Create option");
         var characterEnum = Enum.GetNames(typeof(CharacterEnum));
         foreach (var item in characterEnum)
         {
-            Debug.Log("in for");
+
             CharacterPf tmp = Instantiate(m_CharacterPf, m_pfParent);
             CharacterEnum tmpEnum = (CharacterEnum)Enum.Parse(typeof(CharacterEnum), item, true);
-            tmp._SetupData(m_characterChose.m_TextureDic[tmpEnum], 0, m_characterChose);
+            tmp._SetupData(m_characterChose.m_TextureDic[tmpEnum], 0, m_characterChose,this);
         }
     } 
     
+    public void _IncreasePlayer(int _num)
+    {
+        m_TotalNumber += _num;
+    }
+    public void _DecreasePlayer(int _num)
+    {
+        m_TotalNumber -= _num;
+    }
 }
