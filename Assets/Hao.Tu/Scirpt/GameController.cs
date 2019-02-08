@@ -24,6 +24,7 @@ public class GameController : MonoBehaviour
         else
         {
             m_GameControler = this;
+            ChangeScene(0);
         }
 
     }
